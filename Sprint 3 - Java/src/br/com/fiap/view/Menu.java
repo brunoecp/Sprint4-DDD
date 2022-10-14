@@ -28,7 +28,7 @@ public class Menu {
 		do {
 
 			System.out.println("----------------------------------------------");
-			System.out.println("Bem vindo ao software da equipe Data Cleans!\nEscolha o que vocÍ gostaria de fazer:");
+			System.out.println("Bem vindo ao software da equipe Data Cleans!\nEscolha o que voc√™ gostaria de fazer:");
 			System.out.println("0- Sair\n1- Registrar\n2- Atualizar\n3- Visualizar\n4- Remover\n5- Pesquisar");
 			opcao = scan.nextInt();
 			System.out.println("----------------------------------------------");
@@ -36,11 +36,11 @@ public class Menu {
 			switch (opcao) {
 			case 1:
 
-				System.out.println("O que vocÍ gostaria de registrar?");
-				System.out.println("OpÁıes para empresas:\n0- Sair\n1- Empresa\n2- Vagas");
+				System.out.println("O que voc√™ gostaria de registrar?");
+				System.out.println("Op√ß√µes para empresas:\n0- Sair\n1- Empresa\n2- Vagas");
 				System.out.println(
-						"OpÁıes para candidatos:\n3- Candidato\n4- ExperiÍncia profissional\n5- FormaÁ„o acadÍmica"
-								+ "\n6- FormaÁ„o complementar\n7- Idioma\n8- InstituiÁ„o educacional");
+						"Op√ß√µes para candidatos:\n3- Candidato\n4- Experi√™ncia profissional\n5- Forma√ß√£o acad√™mica"
+								+ "\n6- Forma√ß√£o complementar\n7- Idioma\n8- Institui√ß√£o educacional");
 				opcao2 = scan.nextInt();
 
 				switch (opcao2) {
@@ -53,11 +53,11 @@ public class Menu {
 					String nome = scan.next() + scan.nextLine();
 					System.out.println("Insira o CNPJ:");
 					Long cnpj = scan.nextLong();
-					System.out.println("Insira a ·rea em que a empresa È focada:");
+					System.out.println("Insira a √°rea em que a empresa √† focada:");
 					String area = scan.next() + scan.nextLine();
 					System.out.println("Insira sua senha:");
 					String senha = scan.next() + scan.nextLine();
-					System.out.println("Insira o n˙mero de celular/ telefone do RH:");
+					System.out.println("Insira o n√∫mero de celular/ telefone do RH:");
 					Long telefone = scan.nextLong();
 					System.out.println("Insira o e-mail:");
 					String email = scan.next() + scan.nextLine();
@@ -81,19 +81,19 @@ public class Menu {
 
 				case 2:
 
-					System.out.println("Insira o cÛdigo da empresa que a vaga est· associada:");
+					System.out.println("Insira o c√≥digo da empresa que a vaga est√° associada:");
 					int idEmpresa = scan.nextInt();
 					System.out.println("Insira o cargo da vaga:");
 					String cargo = scan.next() + scan.nextLine();
-					System.out.println("Insira o nivel de conhecimento necess·rio:");
+					System.out.println("Insira o nivel de conhecimento necess√°rio:");
 					String nivel = scan.next() + scan.nextLine();
-					System.out.println("Insira a localizaÁ„o:");
+					System.out.println("Insira a localiza√ß√£o:");
 					String localizacao = scan.next() + scan.nextLine();
-					System.out.println("Insira o sal·rio:");
+					System.out.println("Insira o sal√°rio:");
 					double salario = scan.nextDouble();
 					System.out.println("Insira os requisitos para essa vaga:");
 					String requisitos = scan.next() + scan.nextLine();
-					System.out.println("Insira o tipo (home-office, presencial, hÌbrido ou flexÌvel):");
+					System.out.println("Insira o tipo (home-office, presencial, h√≠brido ou flex√≠vel):");
 					String tipo = scan.next() + scan.nextLine();
 
 					Empresa empresa = null;
@@ -124,24 +124,24 @@ public class Menu {
 					String nomeCand = scan.next() + scan.nextLine();
 					System.out.println("Insira seu e-mail:");
 					String emailCand = scan.next() + scan.nextLine();
-					System.out.println("Insira o n˙mero do seu celular:");
+					System.out.println("Insira o n√∫mero do seu celular:");
 					Long telCand = scan.nextLong();
 					System.out.println("Insira seu CPF:");
 					Long cpf = scan.nextLong();
-					System.out.println("Insira seu gÍnero: (F - feminino, M - masculino, NB - n„o binarie)");
+					System.out.println("Insira seu g√™nero: (F - feminino, M - masculino, NB - n√£o binarie)");
 					String genero = scan.next() + scan.nextLine();
 					System.out.println("Insira sua senha:");
 					String senhaCand = scan.next() + scan.nextLine();
 					System.out.println("Insira sua data de nascimento: (DD/MM/YYYY)");
 					String dataNasc = scan.next() + scan.nextLine();
-					System.out.println("Insira sua ·rea profissional:");
+					System.out.println("Insira sua √°rea profissional:");
 					String areaProf = scan.next() + scan.nextLine();
 					System.out.println(
-							"Insira seu nÌvel profissional: (Jovem aprendiz, estagi·rio, junior, senior ou pleno)");
+							"Insira seu n√≠vel profissional: (Jovem aprendiz, estagi√°rio, junior, senior ou pleno)");
 					String nivelProf = scan.next() + scan.nextLine();
-					System.out.println("Insira suas informaÁıes adicionais:");
+					System.out.println("Insira suas informa√ß√µes adicionais:");
 					String infoAdic = scan.next() + scan.nextLine();
-					System.out.println("Insira seu endereÁo:");
+					System.out.println("Insira seu endere√ßo:");
 					String endereco = scan.next() + scan.nextLine();
 					System.out.println("Insira seu github:");
 					String github = scan.next() + scan.nextLine();
@@ -160,16 +160,16 @@ public class Menu {
 
 				case 4:
 
-					System.out.println("Insira o cÛdigo do candidato que a experiÍncia profissional est· associada:");
+					System.out.println("Insira o c√≥digo do candidato que a experi√™ncia profissional est√° associada:");
 					int idCandidato = scan.nextInt();
 
-					System.out.println("Insira o nome da empresa em qual vocÍ trabalhou:");
+					System.out.println("Insira o nome da empresa em qual voc√™ trabalhou:");
 					String nomeEmp = scan.next() + scan.nextLine();
-					System.out.println("Insira a data de inÌcio:");
+					System.out.println("Insira a data de in√≠cio:");
 					String dataI = scan.next() + scan.nextLine();
-					System.out.println("Insira a data de tÈrmino do cargo:");
+					System.out.println("Insira a data de t√©rmino do cargo:");
 					String dataT = scan.next() + scan.nextLine();
-					System.out.println("Insira a ·rea em que vocÍ atuava:");
+					System.out.println("Insira a √°rea em que voc√™ atuava:");
 					String areaAtuacao = scan.next() + scan.nextLine();
 
 					Candidato c1 = null;
@@ -188,7 +188,7 @@ public class Menu {
 
 					try {
 						boExpProf.cadastrar(expProf);
-						System.out.println("ExperiÍncia profissional cadastrada com sucesso!");
+						System.out.println("Experi√™ncia profissional cadastrada com sucesso!");
 					} catch (ClassNotFoundException | SQLException e1) {
 						e1.printStackTrace();
 					}
@@ -197,19 +197,19 @@ public class Menu {
 
 				case 5:
 
-					System.out.println("Insira o cÛdigo do candidato que a formaÁ„o acadÍmica est· associada:");
+					System.out.println("Insira o c√≥digo do candidato que a forma√ß√£o acad√™mica est√° associada:");
 					int idCandForm = scan.nextInt();
-					System.out.println("Insira o cÛdigo da instituiÁ„o que a formaÁ„o acadÍmica est· associada:");
+					System.out.println("Insira o c√≥digo da institui√ß√£o que a forma√ß√£o acad√™mica est√° associada:");
 					int idInstForm = scan.nextInt();
 					System.out.println("Insira o nome do curso:");
 					String curso = scan.next() + scan.nextLine();
-					System.out.println("Insira a data de inÌcio: (DD/MM/YYYY)");
+					System.out.println("Insira a data de in√≠cio: (DD/MM/YYYY)");
 					String dataInicio = scan.next() + scan.nextLine();
-					System.out.println("Insira a data de conclus„o: (DD/MM/YYYY)");
+					System.out.println("Insira a data de conclus√£o: (DD/MM/YYYY)");
 					String dataConclusao = scan.next() + scan.nextLine();
-					System.out.println("Insira a ·rea de estudo:");
+					System.out.println("Insira a √°rea de estudo:");
 					String areaForm = scan.next() + scan.nextLine();
-					System.out.println("InformaÁıes adicionais: (O que vocÍ aprendeu, por exemplo)");
+					System.out.println("Informa√ß√µes adicionais: (O que voc√™ aprendeu, por exemplo)");
 					String infoAdicForm = scan.next() + scan.nextLine();
 
 					Candidato c2 = null;
@@ -230,7 +230,7 @@ public class Menu {
 
 					try {
 						boFormAcad.cadastrar(formAcad);
-						System.out.println("FormaÁ„o acadÍmica registrada com sucesso!");
+						System.out.println("Forma√ß√£o acad√™mica registrada com sucesso!");
 					} catch (ClassNotFoundException | SQLException e5) {
 						e5.printStackTrace();
 					}
@@ -239,17 +239,17 @@ public class Menu {
 
 				case 6:
 
-					System.out.println("Insira o cÛdigo do candidato que a formaÁ„o acadÍmica est· associada:");
+					System.out.println("Insira o c√≥digo do candidato que a forma√ß√£o acad√™mica est√° associada:");
 					int idCandFormComp = scan.nextInt();
-					System.out.println("Insira o cÛdigo da instituiÁ„o que a formaÁ„o acadÍmica est· associada:");
+					System.out.println("Insira o c√≥digo da institui√ß√£o que a forma√ß√£o acad√™mica est√° associada:");
 					int idInstFormComp = scan.nextInt();
 					System.out.println("Insira o nome do curso:");
 					String cursoFC = scan.next() + scan.nextLine();
-					System.out.println("Insira a data de inÌcio: (DD/MM/YYYY)");
+					System.out.println("Insira a data de in√≠cio: (DD/MM/YYYY)");
 					String dataInicioFC = scan.next() + scan.nextLine();
-					System.out.println("Insira a data de conclus„o: (DD/MM/YYYY)");
+					System.out.println("Insira a data de conclus√£o: (DD/MM/YYYY)");
 					String dataConclusaoFC = scan.next() + scan.nextLine();
-					System.out.println("Insira a ·rea de estudo:");
+					System.out.println("Insira a √°rea de estudo:");
 					String areaFormFC = scan.next() + scan.nextLine();
 
 					Candidato c3 = null;
@@ -270,7 +270,7 @@ public class Menu {
 
 					try {
 						boFormComp.cadastrar(formComp);
-						System.out.println("FormaÁ„o complementar registrada com sucesso!");
+						System.out.println("Forma√ß√£o complementar registrada com sucesso!");
 					} catch (ClassNotFoundException | SQLException e6) {
 						e6.printStackTrace();
 					}
@@ -279,14 +279,14 @@ public class Menu {
 
 				case 7:
 
-					System.out.println("Insira o cÛdigo do candidato que o idioma est· associado:");
+					System.out.println("Insira o c√≥digo do candidato que o idioma est√° associado:");
 					int idCandIdioma = scan.nextInt();
-					System.out.println("Insira o cÛdigo da instituiÁ„o que o idioma est· associado:");
+					System.out.println("Insira o c√≥digo da institui√ß√£o que o idioma est√° associado:");
 					int idInstIdioma = scan.nextInt();
-					System.out.println("Insira qual È o idioma:");
+					System.out.println("Insira qual idioma:");
 					String nomeIdioma = scan.next() + scan.nextLine();
 					System.out.println(
-							"Insira seu nÌvel de conhecimento desse idioma: (Iniciante, Intermedi·rio, AvanÁado ou Fluente)");
+							"Insira seu n√≠vel de conhecimento desse idioma: (Iniciante, Intermedi√°rio, Avan√ßado ou Fluente)");
 					String nivelIdioma = scan.next() + scan.nextLine();
 
 					Candidato c4 = null;
@@ -315,18 +315,18 @@ public class Menu {
 
 				case 8:
 
-					System.out.println("Insira o nome da instituiÁ„o:");
+					System.out.println("Insira o nome da institui√ß√£o:");
 					String nomeInst = scan.next() + scan.nextLine();
 					System.out.println("Insira o CNPJ:");
 					Long cnpjInst = scan.nextLong();
-					System.out.println("Insira o endereÁo:");
+					System.out.println("Insira o endere√ßo:");
 					String enderecoInst = scan.next() + scan.nextLine();
 
 					Instituicao instituicao = new Instituicao(0, cnpjInst, nomeInst, enderecoInst);
 
 					try {
 						boInstituicao.cadastrar(instituicao);
-						System.out.println("InstituiÁ„o cadastrada com sucesso!");
+						System.out.println("Institui√ß√£o cadastrada com sucesso!");
 					} catch (ClassNotFoundException | SQLException e4) {
 						e4.printStackTrace();
 					}
@@ -334,7 +334,7 @@ public class Menu {
 					break;
 
 				default:
-					System.out.println("OpÁ„o inv·lida.");
+					System.out.println("Op√ß√£o inv√°lida.");
 					break;
 				}
 
@@ -342,11 +342,11 @@ public class Menu {
 
 			case 2:
 
-				System.out.println("O que vocÍ gostaria de atualizar?");
-				System.out.println("OpÁıes para empresas:\n0- Sair\n1- Empresa\n2- Vagas");
+				System.out.println("O que voc√™ gostaria de atualizar?");
+				System.out.println("Op√ß√µes para empresas:\n0- Sair\n1- Empresa\n2- Vagas");
 				System.out.println(
-						"OpÁıes para candidatos:\n3- Candidato\n4- ExperiÍncia profissional\n5- FormaÁ„o acadÍmica"
-								+ "\n6- FormaÁ„o complementar\n7- Idioma\n8- InstituiÁ„o educacional");
+						"Op√ß√µes para candidatos:\n3- Candidato\n4- Experi√™ncia profissional\n5- Forma√ß√£o acad√™mica"
+								+ "\n6- Forma√ß√£o complementar\n7- Idioma\n8- Institui√ß√£o educacional");
 				opcao2 = scan.nextInt();
 
 				switch (opcao2) {
@@ -355,18 +355,18 @@ public class Menu {
 
 				case 1:
 
-					System.out.println("Insira o ID da empresa que vocÍ gostaria de atualizar:");
+					System.out.println("Insira o ID da empresa que voc√™ gostaria de atualizar:");
 					int id = scan.nextInt();
 
 					System.out.println("Insira o nome da empresa:");
 					String nome = scan.next() + scan.nextLine();
 					System.out.println("Insira o CNPJ:");
 					Long cnpj = scan.nextLong();
-					System.out.println("Insira a ·rea em que a empresa È focada:");
+					System.out.println("Insira a √°rea em que a empresa √© focada:");
 					String area = scan.next() + scan.nextLine();
 					System.out.println("Insira sua senha:");
 					String senha = scan.next() + scan.nextLine();
-					System.out.println("Insira o n˙mero de celular/ telefone do RH:");
+					System.out.println("Insira o n√∫mero de celular/ telefone do RH:");
 					Long telefone = scan.nextLong();
 					System.out.println("Insira o e-mail:");
 					String email = scan.next() + scan.nextLine();
@@ -391,22 +391,22 @@ public class Menu {
 					break;
 
 				case 2:
-					System.out.println("Insira o ID da vaga que vocÍ gostaria de atualizar:");
+					System.out.println("Insira o ID da vaga que voc√™ gostaria de atualizar:");
 					int idVaga = scan.nextInt();
 
-					System.out.println("Insira o cÛdigo da empresa que a vaga est· associada:");
+					System.out.println("Insira o c√≥digo da empresa que a vaga est√° associada:");
 					int idEmpresa = scan.nextInt();
 					System.out.println("Insira o cargo da vaga:");
 					String cargo = scan.next() + scan.nextLine();
-					System.out.println("Insira o nivel de conhecimento necess·rio:");
+					System.out.println("Insira o nivel de conhecimento necess√°rio:");
 					String nivel = scan.next() + scan.nextLine();
-					System.out.println("Insira a localizaÁ„o:");
+					System.out.println("Insira a localiza√ß√£o:");
 					String localizacao = scan.next() + scan.nextLine();
-					System.out.println("Insira o sal·rio:");
+					System.out.println("Insira o sal√°rio:");
 					double salario = scan.nextDouble();
 					System.out.println("Insira os requisitos para essa vaga:");
 					String requisitos = scan.next() + scan.nextLine();
-					System.out.println("Insira o tipo (home-office, presencial, hÌbrido ou flexÌvel):");
+					System.out.println("Insira o tipo (home-office, presencial, h√≠brido ou flex√≠vel):");
 					String tipo = scan.next() + scan.nextLine();
 
 					Empresa empresa = null;
@@ -432,31 +432,31 @@ public class Menu {
 
 				case 3:
 
-					System.out.println("Insira o ID do candidato que vocÍ gostaria de atualizar:");
+					System.out.println("Insira o ID do candidato que voc√™ gostaria de atualizar:");
 					int idCand = scan.nextInt();
 
 					System.out.println("Insira seu nome completo:");
 					String nomeCand = scan.next() + scan.nextLine();
 					System.out.println("Insira seu e-mail:");
 					String emailCand = scan.next() + scan.nextLine();
-					System.out.println("Insira o n˙mero do seu celular:");
+					System.out.println("Insira o n√∫mero do seu celular:");
 					Long telCand = scan.nextLong();
 					System.out.println("Insira seu CPF:");
 					Long cpf = scan.nextLong();
-					System.out.println("Insira seu gÍnero: (F - feminino, M - masculino, NB - n„o binarie)");
+					System.out.println("Insira seu g√™nero: (F - feminino, M - masculino, NB - n√£o binarie)");
 					String genero = scan.next() + scan.nextLine();
 					System.out.println("Insira sua senha:");
 					String senhaCand = scan.next() + scan.nextLine();
 					System.out.println("Insira sua data de nascimento: (DD/MM/YYYY)");
 					String dataNasc = scan.next() + scan.nextLine();
-					System.out.println("Insira sua ·rea profissional:");
+					System.out.println("Insira sua √°rea profissional:");
 					String areaProf = scan.next() + scan.nextLine();
 					System.out.println(
-							"Insira seu nÌvel profissional: (Jovem aprendiz, estagi·rio, junior, senior ou pleno)");
+							"Insira seu n√≠vel profissional: (Jovem aprendiz, estagi√°rio, junior, senior ou pleno)");
 					String nivelProf = scan.next() + scan.nextLine();
-					System.out.println("Insira suas informaÁıes adicionais:");
+					System.out.println("Insira suas informa√ß√µes adicionais:");
 					String infoAdic = scan.next() + scan.nextLine();
-					System.out.println("Insira seu endereÁo:");
+					System.out.println("Insira seu endere√ßo:");
 					String endereco = scan.next() + scan.nextLine();
 					System.out.println("Insira seu github:");
 					String github = scan.next() + scan.nextLine();
@@ -475,18 +475,18 @@ public class Menu {
 
 				case 4:
 
-					System.out.println("Insira o cÛdigo da experiÍncia profissional que vocÍ gostaria de atualizar:");
+					System.out.println("Insira o c√≥digo da experi√™ncia profissional que voc√™ gostaria de atualizar:");
 					int idExpProf = scan.nextInt();
 
-					System.out.println("Insira o cÛdigo do candidato que a experiÍncia profissional est· associada:");
+					System.out.println("Insira o c√≥digo do candidato que a experi√™ncia profissional est√° associada:");
 					int idCandidato = scan.nextInt();
-					System.out.println("Insira o nome da empresa em qual vocÍ trabalhou:");
+					System.out.println("Insira o nome da empresa em qual voc√™ trabalhou:");
 					String nomeEmp = scan.next() + scan.nextLine();
-					System.out.println("Insira a data de inÌcio:");
+					System.out.println("Insira a data de in√≠cio:");
 					String dataI = scan.next() + scan.nextLine();
-					System.out.println("Insira a data de tÈrmino do cargo:");
+					System.out.println("Insira a data de t√©rmino do cargo:");
 					String dataT = scan.next() + scan.nextLine();
-					System.out.println("Insira a ·rea em que vocÍ atuava:");
+					System.out.println("Insira a √°rea em que voc√™ atuava:");
 					String areaAtuacao = scan.next() + scan.nextLine();
 
 					Candidato c1 = null;
@@ -505,7 +505,7 @@ public class Menu {
 
 					try {
 						boExpProf.atualizar(expProf);
-						System.out.println("ExperiÍncia profissional atualizada com sucesso!");
+						System.out.println("Experi√™ncia profissional atualizada com sucesso!");
 					} catch (ClassNotFoundException | SQLException | IdNotFoundException e1) {
 						e1.printStackTrace();
 					}
@@ -514,22 +514,22 @@ public class Menu {
 
 				case 5:
 
-					System.out.println("Insira o cÛdigo da formaÁ„o acadÍmica que vocÍ gostaria de atualizar:");
+					System.out.println("Insira o c√≥digo da forma√ß√£o acad√™mica que voc√™ gostaria de atualizar:");
 					int idFormAcad = scan.nextInt();
 
-					System.out.println("Insira o cÛdigo do candidato que a formaÁ„o acadÍmica est· associada:");
+					System.out.println("Insira o c√≥digo do candidato que a forma√ß√£o acad√™mica est√° associada:");
 					int idCandForm = scan.nextInt();
-					System.out.println("Insira o cÛdigo da instituiÁ„o que a formaÁ„o acadÍmica est· associada:");
+					System.out.println("Insira o c√≥digo da institui√ß√£o que a forma√ß√£o acad√™mica est√° associada:");
 					int idInstForm = scan.nextInt();
 					System.out.println("Insira o nome do curso:");
 					String curso = scan.next() + scan.nextLine();
-					System.out.println("Insira a data de inÌcio: (DD/MM/YYYY)");
+					System.out.println("Insira a data de in√≠cio: (DD/MM/YYYY)");
 					String dataInicio = scan.next() + scan.nextLine();
-					System.out.println("Insira a data de conclus„o: (DD/MM/YYYY)");
+					System.out.println("Insira a data de conclus√£o: (DD/MM/YYYY)");
 					String dataConclusao = scan.next() + scan.nextLine();
-					System.out.println("Insira a ·rea de estudo:");
+					System.out.println("Insira a √°rea de estudo:");
 					String areaForm = scan.next() + scan.nextLine();
-					System.out.println("InformaÁıes adicionais: (O que vocÍ aprendeu, por exemplo)");
+					System.out.println("Informa√ß√µes adicionais: (O que voc√™ aprendeu, por exemplo)");
 					String infoAdicForm = scan.next() + scan.nextLine();
 
 					Candidato c2 = null;
@@ -550,7 +550,7 @@ public class Menu {
 
 					try {
 						boFormAcad.atualizar(formAcad);
-						System.out.println("FormaÁ„o acadÍmica atualizada com sucesso!");
+						System.out.println("Forma√ß√£o acad√™mica atualizada com sucesso!");
 					} catch (ClassNotFoundException | SQLException | IdNotFoundException e5) {
 						e5.printStackTrace();
 					}
@@ -559,20 +559,20 @@ public class Menu {
 
 				case 6:
 
-					System.out.println("Insira o cÛdigo da formaÁ„o acadÍmica que vocÍ gostaria de atualizar:");
+					System.out.println("Insira o c√≥digo da forma√ß√£o acad√™mica que voc√™ gostaria de atualizar:");
 					int idFormComp = scan.nextInt();
 
-					System.out.println("Insira o cÛdigo do candidato que a formaÁ„o acadÍmica est· associada:");
+					System.out.println("Insira o c√≥digo do candidato que a forma√ß√£o acad√™mica est√° associada:");
 					int idCandFormComp = scan.nextInt();
-					System.out.println("Insira o cÛdigo da instituiÁ„o que a formaÁ„o acadÍmica est· associada:");
+					System.out.println("Insira o c√≥digo da institui√ß√£o que a forma√ß√£o acad√™mica est√° associada:");
 					int idInstFormComp = scan.nextInt();
 					System.out.println("Insira o nome do curso:");
 					String cursoFC = scan.next() + scan.nextLine();
-					System.out.println("Insira a data de inÌcio: (DD/MM/YYYY)");
+					System.out.println("Insira a data de in√≠cio: (DD/MM/YYYY)");
 					String dataInicioFC = scan.next() + scan.nextLine();
-					System.out.println("Insira a data de conclus„o: (DD/MM/YYYY)");
+					System.out.println("Insira a data de conclus√£o: (DD/MM/YYYY)");
 					String dataConclusaoFC = scan.next() + scan.nextLine();
-					System.out.println("Insira a ·rea de estudo:");
+					System.out.println("Insira a √°rea de estudo:");
 					String areaFormComp = scan.next() + scan.nextLine();
 
 					Candidato c3 = null;
@@ -593,7 +593,7 @@ public class Menu {
 
 					try {
 						boFormComp.atualizar(formComp);
-						System.out.println("FormaÁ„o complementar atualizada com sucesso!");
+						System.out.println("Forma√ß√£o complementar atualizada com sucesso!");
 					} catch (ClassNotFoundException | SQLException | IdNotFoundException e6) {
 						e6.printStackTrace();
 					}
@@ -602,17 +602,17 @@ public class Menu {
 
 				case 7:
 
-					System.out.println("Insira o ID do idioma que vocÍ gostaria de atualizar:");
+					System.out.println("Insira o ID do idioma que voc√™ gostaria de atualizar:");
 					int idIdioma = scan.nextInt();
 
-					System.out.println("Insira o cÛdigo do candidato que o idioma est· associado:");
+					System.out.println("Insira o c√≥digo do candidato que o idioma est√° associado:");
 					int idCandIdioma = scan.nextInt();
-					System.out.println("Insira o cÛdigo da instituiÁ„o que o idioma est· associado:");
+					System.out.println("Insira o c√≥digo da institui√ß√£o que o idioma est√° associado:");
 					int idInstIdioma = scan.nextInt();
-					System.out.println("Insira qual È o idioma:");
+					System.out.println("Insira qual √© o idioma:");
 					String nomeIdioma = scan.next() + scan.nextLine();
 					System.out.println(
-							"Insira seu nÌvel de conhecimento desse idioma: (Iniciante, Intermedi·rio, AvanÁado ou Fluente)");
+							"Insira seu n√≠vel de conhecimento desse idioma: (Iniciante, Intermedi√°rio, Avan√ßado ou Fluente)");
 					String nivelIdioma = scan.next() + scan.nextLine();
 
 					Candidato c4 = null;
@@ -641,21 +641,21 @@ public class Menu {
 
 				case 8:
 
-					System.out.println("Insira o ID da instituiÁ„o que vocÍ gostaria de atualizar:");
+					System.out.println("Insira o ID da institui√ß√£o que voc√™ gostaria de atualizar:");
 					int idInst = scan.nextInt();
 
-					System.out.println("Insira o nome da instituiÁ„o:");
+					System.out.println("Insira o nome da institui√ß√£o:");
 					String nomeInst = scan.next() + scan.nextLine();
 					System.out.println("Insira o CNPJ:");
 					Long cnpjInst = scan.nextLong();
-					System.out.println("Insira o endereÁo:");
+					System.out.println("Insira o endere√ßo:");
 					String enderecoInst = scan.next() + scan.nextLine();
 
 					Instituicao instituicao = new Instituicao(idInst, cnpjInst, nomeInst, enderecoInst);
 
 					try {
 						boInstituicao.atualizar(instituicao);
-						System.out.println("InstituiÁ„o atualizada com sucesso!");
+						System.out.println("Institui√ß√£o atualizada com sucesso!");
 					} catch (ClassNotFoundException | SQLException | IdNotFoundException e4) {
 						e4.printStackTrace();
 					}
@@ -663,7 +663,7 @@ public class Menu {
 					break;
 
 				default:
-					System.out.println("OpÁ„o inv·lida.");
+					System.out.println("Op√ß√£o inv√°lida.");
 					break;
 				}
 
@@ -671,8 +671,8 @@ public class Menu {
 
 			case 3:
 
-				System.out.println("O que vocÍ gostaria de visualizar?");
-				System.out.println("0- Sair\n1- Empresas\n2- Vagas\n3- Candidatos\n4- InstituiÁıes educacionais");
+				System.out.println("O que voc√™ gostaria de visualizar?");
+				System.out.println("0- Sair\n1- Empresas\n2- Vagas\n3- Candidatos\n4- Institui√ß√µes educacionais");
 				opcao2 = scan.nextInt();
 
 				switch (opcao2) {
@@ -736,7 +736,7 @@ public class Menu {
 					break;
 
 				default:
-					System.out.println("OpÁ„o inv·lida.");
+					System.out.println("Op√ß√£o inv√°lida.");
 					break;
 				}
 
@@ -744,11 +744,11 @@ public class Menu {
 
 			case 4:
 
-				System.out.println("O que vocÍ gostaria de remover?");
-				System.out.println("OpÁıes para empresas:\n0- Sair\n1- Empresa\n2- Vagas");
+				System.out.println("O que voc√™ gostaria de remover?");
+				System.out.println("Op√ß√µes para empresas:\n0- Sair\n1- Empresa\n2- Vagas");
 				System.out.println(
-						"OpÁıes para candidatos:\n3- Candidato\n4- ExperiÍncia profissional\n5- FormaÁ„o acadÍmica"
-								+ "\n6- FormaÁ„o complementar\n7- Idioma\n8- InstituiÁ„o educacional");
+						"Op√ß√µes para candidatos:\n3- Candidato\n4- Experi√™ncia profissional\n5- Forma√ß√£o acad√™mica"
+								+ "\n6- Forma√ß√£o complementar\n7- Idioma\n8- Institui√ß√£o educacional");
 				opcao2 = scan.nextInt();
 
 				switch (opcao2) {
@@ -757,7 +757,7 @@ public class Menu {
 
 				case 1:
 
-					System.out.println("Insira o ID da empresa que vocÍ gostaria de remover:");
+					System.out.println("Insira o ID da empresa que voc√™ gostaria de remover:");
 					int id = scan.nextInt();
 
 					try {
@@ -771,7 +771,7 @@ public class Menu {
 
 				case 2:
 
-					System.out.println("Insira o ID da vaga que vocÍ gostaria de remover:");
+					System.out.println("Insira o ID da vaga que voc√™ gostaria de remover:");
 					int idVaga = scan.nextInt();
 
 					try {
@@ -785,7 +785,7 @@ public class Menu {
 
 				case 3:
 
-					System.out.println("Insira o ID do candidato que vocÍ gostaria de remover:");
+					System.out.println("Insira o ID do candidato que voc√™ gostaria de remover:");
 					int idCand = scan.nextInt();
 
 					try {
@@ -799,12 +799,12 @@ public class Menu {
 
 				case 4:
 
-					System.out.println("Insira o ID da experiÍncia profissional que vocÍ gostaria de remover:");
+					System.out.println("Insira o ID da experi√™ncia profissional que voc√™ gostaria de remover:");
 					int idExpProf = scan.nextInt();
 
 					try {
 						boExpProf.remover(idExpProf);
-						System.out.println("ExperiÍncia profissional removida com sucesso!");
+						System.out.println("Experi√™ncia profissional removida com sucesso!");
 					} catch (ClassNotFoundException | SQLException | IdNotFoundException e1) {
 						e1.printStackTrace();
 					}
@@ -813,12 +813,12 @@ public class Menu {
 
 				case 5:
 
-					System.out.println("Insira o ID da formaÁ„o acadÍmica que vocÍ gostaria de remover:");
+					System.out.println("Insira o ID da forma√ß√£o acad√™mica que voc√™ gostaria de remover:");
 					int idFormAcad = scan.nextInt();
 
 					try {
 						boFormAcad.remover(idFormAcad);
-						System.out.println("FormaÁ„o acadÍmica removida com sucesso!");
+						System.out.println("Forma√ß√£o acad√™mica removida com sucesso!");
 					} catch (ClassNotFoundException | SQLException | IdNotFoundException e2) {
 						e2.printStackTrace();
 					}
@@ -827,12 +827,12 @@ public class Menu {
 
 				case 6:
 
-					System.out.println("Insira o ID da formaÁ„o complementar que vocÍ gostaria de remover:");
+					System.out.println("Insira o ID da forma√ß√£o complementar que voc√™ gostaria de remover:");
 					int idFormComp = scan.nextInt();
 
 					try {
 						boFormComp.remover(idFormComp);
-						System.out.println("FormaÁ„o complementar removida com sucesso!");
+						System.out.println("Forma√ß√£o complementar removida com sucesso!");
 					} catch (ClassNotFoundException | SQLException | IdNotFoundException e2) {
 						e2.printStackTrace();
 					}
@@ -841,7 +841,7 @@ public class Menu {
 
 				case 7:
 
-					System.out.println("Insira o ID do idioma que vocÍ gostaria de remover:");
+					System.out.println("Insira o ID do idioma que voc√™ gostaria de remover:");
 					int idIdioma = scan.nextInt();
 
 					try {
@@ -855,12 +855,12 @@ public class Menu {
 
 				case 8:
 
-					System.out.println("Insira o ID da instituiÁ„o que vocÍ gostaria de remover:");
+					System.out.println("Insira o ID da institui√ß√£o que voc√™ gostaria de remover:");
 					int idInst = scan.nextInt();
 
 					try {
 						boInstituicao.remover(idInst);
-						System.out.println("InstituiÁ„o removida com sucesso");
+						System.out.println("Institui√ß√£o removida com sucesso");
 					} catch (ClassNotFoundException | SQLException | IdNotFoundException e1) {
 						e1.printStackTrace();
 					}
@@ -868,7 +868,7 @@ public class Menu {
 					break;
 
 				default:
-					System.out.println("OpÁ„o inv·lida.");
+					System.out.println("Op√ß√£o inv√°lida.");
 					break;
 				}
 
@@ -876,9 +876,9 @@ public class Menu {
 
 			case 5:
 
-				System.out.println("O que vocÍ gostaria de pesquisar?");
+				System.out.println("O que voc√™ gostaria de pesquisar?");
 				System.out.println(
-						"\n0- Sair\n1- Empresas por ID\n2- Empresas por NOME\n3- Vagas por CARGO\n4- Vagas por ID DA EMPRESA\n5- Candidato por ID\n6- Candidato por NOME\n7- Candidato por ¡REA PROFISSIONAL");
+						"\n0- Sair\n1- Empresas por ID\n2- Empresas por NOME\n3- Vagas por CARGO\n4- Vagas por ID DA EMPRESA\n5- Candidato por ID\n6- Candidato por NOME\n7- Candidato por √ÅREA PROFISSIONAL");
 
 				opcao2 = scan.nextInt();
 
@@ -990,7 +990,7 @@ public class Menu {
 
 				case 7:
 
-					System.out.println("Insira a ·rea profissional do candidato:");
+					System.out.println("Insira a √°rea profissional do candidato:");
 					String area = scan.next() + scan.nextLine();
 
 					try {
@@ -1006,7 +1006,7 @@ public class Menu {
 					break;
 
 				default:
-					System.out.println("OpÁ„o inv·lida. Por favor digite um n˙mero de 0 a 6.");
+					System.out.println("Op√ß√£o inv√°lida. Por favor digite um n√∫mero de 0 a 6.");
 					break;
 				}
 
@@ -1017,7 +1017,7 @@ public class Menu {
 				break;
 
 			default:
-				System.out.println("OpÁ„o inv·lida. Por favor escolha do n˙mero 0 ao 5.");
+				System.out.println("Op√ß√£o inv√°lida. Por favor escolha do n√∫mero 0 ao 5.");
 				break;
 			}
 
