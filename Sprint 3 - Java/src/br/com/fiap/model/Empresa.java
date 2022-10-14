@@ -14,7 +14,7 @@ public class Empresa extends Usuario {
 
 	@Override
 	public String toString() {
-		return getId() + "- " + getNome() + "\nÁrea profissional: " + areaProfissional + "\nTelefone do RH: "
+		return getId() + "- " + getNome() + "\nÃ¡rea profissional: " + areaProfissional + "\nTelefone do RH: "
 				+ getTelefone() + "\nE-mail: " + getEmail() + "\nCEO: " + ceo + "\nSite: " + site
 				+ "\nCanal do youtube: " + youtube + "\nVagas abertas:\n" + vagas;
 	}
@@ -22,7 +22,7 @@ public class Empresa extends Usuario {
 	public Empresa() {
 	}
 
-	// Construtor com atributos obrigatórios
+	// Construtor com atributos obrigatï¿½rios
 	public Empresa(int id, String nome, Long cnpj, String areaProfissional, String senha, Long telefone, String email,
 			String ceo, String site, String youtube) {
 		super(id, nome, email, senha, telefone);

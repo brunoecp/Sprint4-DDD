@@ -73,7 +73,7 @@ public class CandidatoDAO {
 		ResultSet resultSet = stmt.executeQuery();
 
 		if (!resultSet.next())
-			throw new IdNotFoundException("O ID do candidato n�o foi encontrado.");
+			throw new IdNotFoundException("O ID do candidato não foi encontrado.");
 
 		return parse(resultSet);
 		con.close();
@@ -89,7 +89,7 @@ public class CandidatoDAO {
 		ResultSet resultSet = stmt.executeQuery();
 
 		if (!resultSet.next())
-			throw new IdNotFoundException("O nome do candidato n�o foi encontrado.");
+			throw new IdNotFoundException("O nome do candidato não foi encontrado.");
 
 		return parseList(resultSet);
 		con.close();
@@ -106,7 +106,7 @@ public class CandidatoDAO {
 		ResultSet resultSet = stmt.executeQuery();
 
 		if (!resultSet.next())
-			throw new IdNotFoundException("A �rea profissional do candidato n�o foi encontrada.");
+			throw new IdNotFoundException("A Área profissional do candidato não foi encontrada.");
 
 		return parseList(resultSet);
 		con.close();
@@ -134,7 +134,7 @@ public class CandidatoDAO {
 		int qtd = stmt.executeUpdate();
 
 		if (qtd == 0)
-			throw new IdNotFoundException("O ID do candidato n�o foi encontrado");
+			throw new IdNotFoundException("O ID do candidato não foi encontrado");
 		con.close();
 	}
 
@@ -147,7 +147,7 @@ public class CandidatoDAO {
 		int qtd = stmt.executeUpdate();
 
 		if (qtd == 0)
-			throw new IdNotFoundException("O ID do candidato n�o foi encontrado.");
+			throw new IdNotFoundException("O ID do candidato não foi encontrado.");
 		con.close();
 	}
 

@@ -9,7 +9,7 @@ public class ExperienciaProfissional {
 	private String dataTermino;
 	private String areaAtuacao;
 
-	// Construtor com atributos obrigatÛrios
+	// Construtor com atributos obrigatÔøΩrios
 	public ExperienciaProfissional(int id, Candidato candidato, String empresa, String dataInicio, String dataTermino,
 			String areaAtuacao) {
 		this.id = id;
@@ -22,8 +22,8 @@ public class ExperienciaProfissional {
 
 	@Override
 	public String toString() {
-		return "\nID: " + id + "\nEmpresa: " + empresa + "\nData de inÌcio: " + dataInicio + "\nData do tÈrmino: "
-				+ dataTermino + "\n¡rea de atuaÁ„o: " + areaAtuacao;
+		return "\nID: " + id + "\nEmpresa: " + empresa + "\nData de in√≠cio: " + dataInicio + "\nData do t√©rmino: "
+				+ dataTermino + "\n√Årea de atua√ß√£o: " + areaAtuacao;
 	}
 
 	// Getters e Setters

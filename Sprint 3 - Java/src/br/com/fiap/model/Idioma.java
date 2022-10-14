@@ -9,7 +9,7 @@ public class Idioma {
 	private String curso;
 	private String nivel;
 
-	// Construtor com atributos obrigatórios
+	// Construtor com atributos obrigatï¿½rios
 	public Idioma(int id, Candidato candidato, Instituicao instituicao, String curso, String nivel) {
 		this.id = id;
 		this.candidato = candidato;
@@ -20,8 +20,8 @@ public class Idioma {
 	
 	@Override
 	public String toString() {
-		return "\nID: " + id + "\nCandidato: " + candidato + "\nInstituição: " + instituicao.getNome() + "\nCurso: " + curso
-				+ "\nNível: " + nivel;
+		return "\nID: " + id + "\nCandidato: " + candidato + "\nInstituiÃ§Ã£o: " + instituicao.getNome() + "\nCurso: " + curso
+				+ "\nNÃ­vel: " + nivel;
 	}
 	
 	// Getters e Setters

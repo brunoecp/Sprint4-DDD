@@ -8,11 +8,11 @@ public class Candidato extends Usuario {
 	@Override
 	public String toString() {
 		return "Candidato " + getId() + "- " + getNome() + "\nE-mail: " + getEmail() + "\nCelular: " + getTelefone()
-				+ "\nGÍnero: " + genero + "\nData de nascimento: " + dataNascimento + "\nEndereÁo: " + endereco
-				+ "\nGithub: " + github + "\nInformaÁ„o adicional: " + infoAdicional + "\n¡rea profissional: "
-				+ areaProfissional + "\nNÌvel profissional: " + nivelProfissional + "\nExperiÍncia profissional: "
-				+ expProfissional.toString() + "\nFormaÁ„o acadÍmica: " + formAcademica.toString()
-				+ "\nFormaÁ„o complementar: " + formComplementar.toString() + "\nIdioma: " + idioma.toString();
+				+ "\nG√™nero: " + genero + "\nData de nascimento: " + dataNascimento + "\nEndere√ßo: " + endereco
+				+ "\nGithub: " + github + "\nInforma√ß√£o adicional: " + infoAdicional + "\n√Årea profissional: "
+				+ areaProfissional + "\nN√≠vel profissional: " + nivelProfissional + "\nExperi√™ncia profissional: "
+				+ expProfissional.toString() + "\nForma√ß√£o acad√™mica: " + formAcademica.toString()
+				+ "\nForma√ß√£o complementar: " + formComplementar.toString() + "\nIdioma: " + idioma.toString();
 	}
 
 	// Atributos

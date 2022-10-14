@@ -14,12 +14,12 @@ public class Vaga {
 
 	@Override
 	public String toString() {
-		return id + "- " + cargo + "\nEmpresa: " + empresa.getId() + "- " + empresa.getNome() + "\nNível: " + nivel + "\nLocalização: "
-				+ localizacao + "\nNível salário: " + salario + "\nRequisitos: " + requisitos + "\nTipo: " + tipo
+		return id + "- " + cargo + "\nEmpresa: " + empresa.getId() + "- " + empresa.getNome() + "\nNÃ­vel: " + nivel + "\nLocalizaÃ§Ã£o: "
+				+ localizacao + "\nNÃ­vel salÃ¡rio: " + salario + "\nRequisitos: " + requisitos + "\nTipo: " + tipo
 				+ "\n";
 	}
 
-	// Construtor com atributos obrigatórios
+	// Construtor com atributos obrigatï¿½rios
 	public Vaga(int id, Empresa empresa, String cargo, String nivel, String localizacao, double salario,
 			String requisitos, String tipo) {
 		this.id = id;

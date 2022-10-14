@@ -93,7 +93,7 @@ public class EmpresaDAO {
 		ResultSet resultSet = stmt.executeQuery();
 
 		if (!resultSet.next())
-			throw new IdNotFoundException("O ID da empresa n�o foi encontrado.");
+			throw new IdNotFoundException("O ID da empresa não foi encontrado.");
 
 		return parse(resultSet);
 		con.close();

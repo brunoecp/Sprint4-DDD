@@ -4,8 +4,8 @@ public class FormacaoComplementar {
 
 	@Override
 	public String toString() {
-		return "\nID: " + id + "\nInstituição: " + instituicao.getNome() + "\nCurso: " + curso + "\nData de início: "
-				+ dataInicio + "\nData de conclusão: " + dataConclusao + "\nÁrea: " + area;
+		return "\nID: " + id + "\nInstituiÃ§Ã£o: " + instituicao.getNome() + "\nCurso: " + curso + "\nData de inÃ­cio: "
+				+ dataInicio + "\nData de conclusÃ£o: " + dataConclusao + "\nÃ¡rea: " + area;
 	}
 
 	// Atributos
@@ -17,7 +17,7 @@ public class FormacaoComplementar {
 	private String dataConclusao;
 	private String area;
 
-	// Construtor com atributos obrigatórios
+	// Construtor com atributos obrigatï¿½rios
 	public FormacaoComplementar(int id, Instituicao instituicao, Candidato candidato, String curso, String dataInicio,
 			String dataConclusao, String area) {
 		this.id = id;

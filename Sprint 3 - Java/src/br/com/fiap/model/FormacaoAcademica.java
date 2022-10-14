@@ -4,8 +4,8 @@ public class FormacaoAcademica {
 
 	@Override
 	public String toString() {
-		return "\nID: " + id + "\nInstituiÁ„o: " + instituicao.getNome() + "\nCurso: " + curso + "\nData de inÌcio: "
-				+ dataInicio + "\nData de conclus„o: " + dataConclusao + "\n¡rea: " + area + "\nInformaÁ„o adicional: "
+		return "\nID: " + id + "\nInstitui√ß√£o: " + instituicao.getNome() + "\nCurso: " + curso + "\nData de in√≠cio: "
+				+ dataInicio + "\nData de conclus√£o: " + dataConclusao + "\n√Årea: " + area + "\nInforma√ß√£o adicional: "
 				+ infoAdicional;
 	}
 
@@ -19,7 +19,7 @@ public class FormacaoAcademica {
 	private String area;
 	private String infoAdicional;
 
-	// Construtor com atributos obrigatÛrios
+	// Construtor com atributos obrigatÔøΩrios
 	public FormacaoAcademica(int id, Candidato candidato, Instituicao instituicao, String curso, String dataInicio,
 			String dataConclusao, String area, String infoAdicional) {
 		this.id = id;
